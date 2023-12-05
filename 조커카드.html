@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+        }
+        #wrapper {
+            
+        }   
+        #sw {
+            color: red;
+            padding: 20px;
+            background-color: yellow;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        let n = 0;
+        let card = document.getElementById("card");
+        
+        card.src="../images/card/h2.png";
+
+        function joker (){
+            n++;
+            n = (n % 3 === 0)? 0 : n;
+        }
+            let sw= document.getElementById("sw");
+            sw.addEventListener("click", function(){
+
+        })
+
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <img id="card" src="../images/card/h1.png" alt="">
+        <button id="sw">조커를뽑아라</button>
+    </div>
+</body>
+</html>
